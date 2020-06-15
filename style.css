@@ -218,10 +218,48 @@ header::before {
   box-sizing: border-box;
 }
 
-.column-66 article{
+.column-66 article {
   text-align:center;
 }
 
-.column-33 article{
+.column-33 article {
   text-align:center;
+}
+
+.column-66 p {
+  line-height:45px;
+}
+
+p.subtext {
+  line-height:55px;
+}
+
+.column a {
+  font-size: 1em;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;  
+}
+
+.column a:visited{
+  color:black;
+  text-decoration: none;
+}
+
+.column a:link{
+  color:black;
+  text-decoration: none;
+}
+
+.column a:hover{
+  color:grey;
+  opacity:0.99;
+  text-decoration: none;
+}
+
+.column a:active{
+  color:grey;
+  text-decoration: none;
 }
