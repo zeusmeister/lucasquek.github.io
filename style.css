@@ -104,7 +104,7 @@ header::before {
 }
 
 .main {
-  text-align:center;
+  text-align:left;
   z-index: 2;
   position: absolute;
   top: 100vh;
@@ -117,6 +117,7 @@ header::before {
 }
 
 .main section {
+  text-align:center;
   padding-top:1.5em;
   padding-bottom:1.5em;
   background-color:steelblue;
@@ -144,61 +145,83 @@ header::before {
   display:inline-block;
 }
 
-.columnfirst {
+.column {
   text-align:center;
   float: left;
   width: 50%;
-  background-color:papayawhip;
   color:black;
-  height:15em;
+  padding-top:1em;
+  padding-bottom:1em;
 }
 
-.columnsecond {
-  text-align:center;
-  float: left;
-  width: 50%;
-  background-color:papayawhip;
-  color:black;
-  height:30em;
-}
-
-.columnfirst p {
-  text-align:left;
+.column p {
   position:relative;
   width:75%;
   margin-left:auto;
   margin-right:auto;
-}
-
-.columnsecond p {
-  text-align:left;
-  position:relative;
-  width:75%;
-  margin-left:auto;
-  margin-right:auto;
+  line-height:35px;
 }
 
 .education p {
   text-align:center;
+  line-height:75px;
 }
 
-.container {
+.main {
   content:"";
   display:table;
   clear:both;
 }
 
-.about h4 {
+.main article {
+  line-height:25px;
+  font-size:1em;
   margin:0;
 }
 
 .about {
-  background-color:papayawhip;
   padding-top:1.5em;
   padding-bottom:1.5em;
   margin:0;
 }
 
-.interest p {
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.container {
+  padding: 1em;
+  background-color:rgba(164, 202, 223, 1);
+}
+
+.container img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column-66 article{
+  text-align:center;
+}
+
+.column-33 article{
   text-align:center;
 }
