@@ -95,7 +95,7 @@ header::before {
   bottom: 0;
   display: block;
   background: url(Pictures/background1.jpg);
-  filter:saturate(85%);
+  filter:contrast(110%);
   background-size: cover;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
@@ -108,7 +108,8 @@ header::before {
   z-index: 2;
   position: absolute;
   top: 100vh;
-  background: whitesmoke;
+  background: rgb(70,130,180);
+  background: linear-gradient(0deg, rgba(70,130,180,1) 0%, rgba(164,202,233,1) 33%, rgba(164,202,233,1) 66%, rgba(70,130,180,1) 100%);
   line-height: 70px;
   font-weight: lighter;
   color:black;
@@ -199,7 +200,6 @@ header::before {
 
 .container {
   padding: 1em;
-  background-color:rgba(164, 202, 223, 1);
 }
 
 .container img {
@@ -262,4 +262,22 @@ p.subtext {
 .column a:active{
   color:grey;
   text-decoration: none;
+}
+
+.subtext li {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 0.5em;
+  line-height: 45px;
+}
+
+.subtextgoals li {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 0.5em;
+  line-height: 45px;
 }
