@@ -57,7 +57,7 @@ body {
   opacity:0.6;
 }
 
-.banner > .navigation > li > a.active {
+.banner > .navigation > li > a.activesite {
   opacity:0.5;
 }
 
@@ -103,18 +103,21 @@ header::before {
   min-height: 100vh;
 }
 
-.main {
+.notbanner {
   text-align:left;
   z-index: 2;
   position: absolute;
   top: 100vh;
-  background: rgb(70,130,180);
-  background: linear-gradient(0deg, rgba(70,130,180,1) 0%, rgba(164,202,233,1) 33%, rgba(164,202,233,1) 66%, rgba(70,130,180,1) 100%);
   line-height: 70px;
   font-weight: lighter;
   color:black;
   width: 100%;
   font-size:2.5em
+}
+
+.main {
+  background: rgb(70,130,180);
+  background: linear-gradient(180deg, rgba(70,130,180,1) 0%, rgba(70,130,180,1) 9%, rgba(164,202,233,1) 25%, rgba(164,202,233,1) 100%);
 }
 
 .main section {
@@ -140,7 +143,7 @@ header::before {
   color:black;
 }
 
-.cert img {
+.cert {
   height:25em;
   width:auto;
   display:inline-block;
@@ -202,11 +205,24 @@ header::before {
   padding: 1em;
 }
 
+.container photoright {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.container photoleft{
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 .container img {
   display: block;
   height: auto;
   max-width: 100%;
 }
+
 
 .row:after {
   content: "";
@@ -274,10 +290,49 @@ p.subtext {
 }
 
 .subtextgoals li {
+  text-align: left;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-size: 0.5em;
   line-height: 45px;
+}
+
+.photoright {
+  box-shadow: 5px 10px 5px 3px #4682B4;
+}
+
+.photoleft {
+  box-shadow: -5px 10px 5px 3px #4682B4;
+}
+
+.certs section {
+  text-align:center;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+  background-color:steelblue;
+  color:whitesmoke;
+}
+
+.category {
+  background: rgb(70,130,180);
+  background: linear-gradient(0deg, rgba(70,130,180,1) 0%, rgba(70,130,180,1) 9%, rgba(164,202,233,1) 25%, rgba(164,202,233,1) 75%, rgba(70,130,180,1) 91%, rgba(70,130,180,1) 100%);
+}
+
+footer .container {
+  background-color:steelblue;
+}
+
+footer p {
+  text-align:center;
+  color:whitesmoke;
+  font-size:25px;
+}
+
+.white{
+  color:whitesmoke;
+  line-height:25px;
+  font-size:1.2em;
+  margin:0;
 }
