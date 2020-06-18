@@ -314,6 +314,7 @@ p.subtext {
 }
 
 .category {
+  background:rgba(164,202,233,1);
   text-align:center;
 }
 
@@ -322,7 +323,6 @@ p.subtext {
   justify-content: space-between;
   padding: 0 2em;
   align-items: flex-start;
-  background:rgba(164,202,233,1);
 }
 
 footer .container {
@@ -365,4 +365,22 @@ footer p {
 
 .column .personaldata li a.activesite {
   opacity:0.5;
+}
+
+.certs ul {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  list-style: inside;
+  width:30%;
+}
+
+.certs li {
+  font-size: 0.5em;
+  line-height: 45px;
+}
+
+.timeline {
+  text-align:center;
 }
