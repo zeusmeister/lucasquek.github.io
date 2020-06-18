@@ -320,7 +320,7 @@ p.subtext {
 .certs {
   flex-flow: row;
   justify-content: space-between;
-  padding: 0 4em;
+  padding: 0 2em;
   align-items: flex-start;
   background:rgba(164,202,233,1);
 }
