@@ -115,6 +115,10 @@ header::before {
   font-size:2.5em
 }
 
+.notbanner1 {
+  font-size:2.5em
+}
+
 .main {
   background: rgb(70,130,180);
   background: linear-gradient(180deg, rgba(70,130,180,1) 0%, rgba(70,130,180,1) 9%, rgba(164,202,233,1) 25%, rgba(164,202,233,1) 100%);
@@ -132,19 +136,12 @@ header::before {
   font-size:0.5em
 }
 
-.certs {
-  display:flex;
-  justify-content:space-around;
-  flex-wrap:wrap;
-}
-
 .cert {
   text-align:center;
-  color:black;
 }
 
 .cert {
-  height:25em;
+  height:10em;
   width:auto;
   display:inline-block;
 }
@@ -250,7 +247,7 @@ p.subtext {
   line-height:55px;
 }
 
-.column a {
+.column > a {
   font-size: 1em;
   display: block;
   margin-block-start: 1em;
@@ -307,17 +304,25 @@ p.subtext {
   box-shadow: -5px 10px 5px 3px #4682B4;
 }
 
-.certs section {
+.category section {
   text-align:center;
   padding-top:1.5em;
   padding-bottom:1.5em;
   background-color:steelblue;
   color:whitesmoke;
+  width:100%;
 }
 
 .category {
-  background: rgb(70,130,180);
-  background: linear-gradient(0deg, rgba(70,130,180,1) 0%, rgba(70,130,180,1) 9%, rgba(164,202,233,1) 25%, rgba(164,202,233,1) 75%, rgba(70,130,180,1) 91%, rgba(70,130,180,1) 100%);
+  text-align:center;
+}
+
+.certs {
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 0 4em;
+  align-items: flex-start;
+  background:rgba(164,202,233,1);
 }
 
 footer .container {
@@ -335,4 +340,29 @@ footer p {
   line-height:25px;
   font-size:1.2em;
   margin:0;
+  height: 100%;
+  width: 100%;
+  padding:48px;
+}
+
+.column .personaldata li{
+  margin: 0;
+  padding: 0;
+  height:2em;
+  list-style-type: none;
+  font-size: 0.7em;
+  z-index:1;
+}
+
+.column .personaldata li a {
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+.column .personaldata li a:hover {
+  opacity:0.6;
+}
+
+.column .personaldata li a.activesite {
+  opacity:0.5;
 }
