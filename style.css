@@ -168,6 +168,27 @@ header::before {
   line-height:75px;
 }
 
+.education a:visited{
+  color:black;
+  text-decoration: none;
+}
+
+.education a:link{
+  color:black;
+  text-decoration: none;
+}
+
+.education a:hover{
+  color:grey;
+  opacity:0.99;
+  text-decoration: none;
+}
+
+.education a:active{
+  color:grey;
+  text-decoration: none;
+}
+
 .main {
   content:"";
   display:table;
@@ -278,6 +299,7 @@ p.subtext {
 }
 
 .subtext li {
+  text-align: left;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -286,14 +308,9 @@ p.subtext {
   line-height: 45px;
 }
 
-.subtextgoals li {
-  text-align: left;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-size: 0.5em;
-  line-height: 45px;
+.subtext.leadership {
+  margin-left:2em;
+  margin-right:2em;
 }
 
 .photoright {
@@ -373,7 +390,7 @@ footer p {
   margin-right: auto;
   text-align: left;
   list-style: inside;
-  width:30%;
+  width:40%;
 }
 
 .certs li {
@@ -383,4 +400,55 @@ footer p {
 
 .timeline {
   text-align:center;
+}
+
+.dropbtn {
+  margin-top:2em;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;  
+  background-color:steelblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px black;
+  z-index: 1;
+}
+
+.dropdown-content p {
+  font-size: 0.6em;
+  margin-left:1em;
+  margin-right:1em;
+}
+.show {display: block;}
+
+.video video{
+  margin-left: auto;
+  margin-right: auto;
+  display: block  
+}
+
+.notbanner1 > .container > article {
+  margin-top:1em;
+  margin-bottom:1em;
+  text-align:center;
+}
+
+.image img {
+  width:60%;
+  height:auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block  
 }
