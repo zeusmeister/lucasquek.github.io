@@ -116,7 +116,8 @@ header::before {
 }
 
 .notbanner1 {
-  font-size:2.5em
+  font-size:2.5em;
+  background:rgba(164,202,233,1);
 }
 
 .main {
@@ -338,7 +339,7 @@ p.subtext {
 .certs {
   flex-flow: row;
   justify-content: space-between;
-  padding: 0 2em;
+  padding: 0 1.5em;
   align-items: flex-start;
 }
 
