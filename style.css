@@ -108,12 +108,14 @@ header::before {
   bottom: 0;
   display: block;
   background: url(Pictures/background1.jpg);
+  background-position: 50% 0;
   filter:contrast(110%);
   background-size: cover;
   transform-origin: center center 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1;
-  min-height: 100vh;
+  height: 100vh;
+  width:100%
 }
 
 .notbanner {
@@ -348,7 +350,7 @@ footer p {
 
 .white{
   color:whitesmoke;
-  line-height:25px;
+  line-height:1.5625em;
   font-size:1.2em;
   margin:0;
   height: 100%;
@@ -384,8 +386,7 @@ footer p {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
-  list-style: inside;
-  width:40%;
+  width: 15em;
 }
 
 .certs li {
@@ -446,4 +447,40 @@ footer p {
   margin-left: auto;
   margin-right: auto;
   display: block  
+}
+
+.comingsoon {
+	-webkit-animation: flicker-4 5s linear 0.5s infinite both;
+	        animation: flicker-4 5s linear 0.5s infinite both;
+}
+
+@-webkit-keyframes flicker-4{0%,100%{opacity:1}31.98%{opacity:1}32%{opacity:0}32.8%{opacity:0}32.82%{opacity:1}34.98%{opacity:1}35%{opacity:0}35.7%{opacity:0}35.72%{opacity:1}36.98%{opacity:1}37%{opacity:0}37.6%{opacity:0}37.62%{opacity:1}67.98%{opacity:1}68%{opacity:0}68.4%{opacity:0}68.42%{opacity:1}95.98%{opacity:1}96%{opacity:0}96.7%{opacity:0}96.72%{opacity:1}98.98%{opacity:1}99%{opacity:0}99.6%{opacity:0}99.62%{opacity:1}}@keyframes flicker-4{0%,100%{opacity:1}31.98%{opacity:1}32%{opacity:0}32.8%{opacity:0}32.82%{opacity:1}34.98%{opacity:1}35%{opacity:0}35.7%{opacity:0}35.72%{opacity:1}36.98%{opacity:1}37%{opacity:0}37.6%{opacity:0}37.62%{opacity:1}67.98%{opacity:1}68%{opacity:0}68.4%{opacity:0}68.42%{opacity:1}95.98%{opacity:1}96%{opacity:0}96.7%{opacity:0}96.72%{opacity:1}98.98%{opacity:1}99%{opacity:0}99.6%{opacity:0}99.62%{opacity:1}}
+
+@media screen and (max-width: 1000px) {
+  .notbanner p,
+  .notbanner1 p,
+  .notbanner li {
+    line-height: 35px;
+    font-size: 0.35em
+  }
+  .column,
+  .column-66,
+  .column-33 {
+    width:100%;
+  }
+  .email {
+    padding: 0;
+  }
+  .cert {
+    height:6.5em
+  }
+  .certs {
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header div h1 {
+    font-size: 0.7em;
+  }
 }
