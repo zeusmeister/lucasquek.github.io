@@ -32,3 +32,11 @@ window.onclick = function(event) {
   }
 }
 
+function myFunction() {
+  var x = document.getElementById("navbar");
+  if (x.className === "banner") {
+    x.className += "responsive";
+  } else {
+    x.className = "banner";
+  }
+}

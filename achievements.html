@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-  <meta name="description" content="Lucas' Portfolio Achievements Page">
+	<meta name="description" content="Lucas' Portfolio Achievements Page">
 	<title>Explore My Certificate Gallery!</title>
 	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
@@ -17,21 +17,24 @@
 
 	</script>
 
-	<div class="banner">
-
-		<ul class="navigation">
-
-			<div class="name">Lucas Quek</div>
-
-			<li><a href="./"><i class="fa fa-fw fa-home"></i>  Home</a></li>
-      <li><a class="activesite" href="#"><i class="fas fa-trophy"></i>  Achievements</a></li>
-      <li><a href="projects"><i class="fas fa-file"></i></i>  Projects</a></li>
-    </ul>
+	<div class="banner" id="navbar">
+		<a class="name" href="./">Lucas Quek</a>
+		<div class="links">
+			<a href="./"><i class="fa fa-fw fa-home"></i>  Home</a>
+      <a class="activesite" href=""><i class="fas fa-trophy"></i>  Achievements</a>
+      <a href="projects"><i class="fas fa-file"></i>  Projects</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
   </div>
   <div class="notbanner1">
-      <div class="container">
-        <article><b>IT Certifications</b></article>
-          <ul class="achievementlist">
+      <div class="container it">
+        <div class="column">
+          <article><b>IT Certifications</b></article>
+          <p>The certificates I attained related to Information Technology and Cybersecurity.</p>
+          <img src="Pictures/dstamedal.jpeg" width="35%" height="auto">
+        </div>
+        <div class="column">
+          <ul class="subtext">
             <li>AEM at Singapore Polytechnic on Cybersecurity</li>
             <li>DSTA - DSO | IoT + Cybersecurity Camp at Victoria School</li>
             <li>National Olympiad in Informatics</li>
@@ -41,6 +44,7 @@
             <li>Robotics Courses</li>
             <li>Google Grasshopper Courses</li>
           </ul>
+        </div>
         <div class="row landscape">
           <img class="cert" src="Pictures/Certs/SP.jpg" alt="cert">
           <img class="cert" src="Pictures/Certs/NOI.jpg" alt="cert">
@@ -71,9 +75,13 @@
           <img class="cert" src="Pictures/Certs/zenva3.jpg" alt="cert">
         </div>
       </div>
-      <div class="container">
-        <article><b>Academic Achievements</b></article>
-          <ul class="achievementlist">
+      <div class="container acad">
+        <div class="column">
+          <article><b>Academic Achievements</b></article>
+          <p>My academic achievements.</p>
+        </div>
+        <div class="column">
+          <ul class="subtext">
             <li>Edusave Award</li>
             <li>Academic Achievement Awards</li>
             <li>Merit Award</li>
@@ -81,6 +89,7 @@
             <li>Grab Bursary</li>
             <li>School Awards</li>
           </ul>
+        </div>
         <div class="row portrait">
           <img class="cert" src="Pictures/Certs/edusave.jpg" alt="cert">
           <img class="cert" src="Pictures/Certs/acadachieve2.jpg" alt="cert">
@@ -96,14 +105,19 @@
           <img class="cert" src="Pictures/Certs/sps2.jpg" alt="cert">
         </div>
       </div>
-      <div class="container">
-        <article><b>Other Certifications/Achievements</b></article>
-          <ul class="achievementlist">
+      <div class="container others">
+        <div class="column">
+          <article><b>Other Achievements</b></article>
+          <p>The certificates I attained related to Information Technology and Cybersecurity.</p>
+        </div>
+        <div class="column">
+          <ul class="subtext">
             <li>Leadership Award</li>
             <li>Starpupil Awards</li>
             <li>Taekwondo Certificate</li>
             <li>Outward Bound Singapore Certificate</li>
           </ul>
+        </div>
         <div class="row landscape">
           <img class="cert" src="Pictures/Certs/obs.jpg" alt="cert">
           <img class="cert" src="Pictures/Certs/starpupil2.jpg" alt="cert">
