@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+/*
+
+	CSS Document 
+	Lucas' SP Journey Reset Style Sheet
+   
+	Filename: lspj_reset.css
+
+	Description: Serves as the reset page for all HTML documents for Lucas' SP Journey (LSPJ).
+
+	Name: Lucas Quek Yufeng
+	Class: DISM/FT/1A/05
+	Student ID: p2104092
+
+	DISCLAIMER: Validator claims that "text-underline-offset" and "text-decoration-thickness" does not exist and presents errors, but it is a valid CSS styling.
+	
+	Also, em has been used instead of pixels along with vh and vw, such tha the content is
+	presentable on both 1366x768 or 1920x1080.
+*/
+
+
+/* Basic styles to be used with all devices and under all conditions */
+
+article, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   background: transparent;
+}
+
+
+/* Set the default page element styles */
+
+html, body {
+	position: relative;
+    height: 100%;
+	overflow-x: hidden;
+	font-size: 1.9vw; /* Used view width for font size so font size will adjust accordingly */
+	scroll-behavior: smooth; /* Added scroll behavior to be smooth for href scrolling */
+}
+
+nav ul {
+   list-style: none;
+}
+
+a, button {
+	text-decoration: none;
+}
+
+a {
+	color: white;
+}
+
+button a {
+	color: black;
+}
+
+h2 {
+	font-size: 1.66em;
+	font-weight: normal;
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 4px;
+}

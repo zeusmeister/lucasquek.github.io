@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+	
+	HTML Document
+	Lucas' SP Journey My Past Experience Page
+
+	Filename: lspj_past.html
+
+	Description: HTML page showing my past life in Secondary School.
+
+	Name: Lucas Quek Yufeng
+	Class: DISM/FT/1A/05
+	Student ID: p2104092
+
+	-->
+	<meta charset="utf-8">
+	<title>My Past Experience</title>
+	<!-- Linking reset and style sheet -->
+	<link href="../css_files/lspj_reset.css" rel="stylesheet" type="text/css">
+	<link href="../css_files/lspj_styles.css" rel="stylesheet" type="text/css">
+	<!-- Imports font-awesome icons -->
+	<script src="https://kit.fontawesome.com/57d7486e4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav> <!-- Nav bar -->
+		<ul> <!-- Unorder list to store navbar elements -->
+			<li><a href="lspj_feedback.html">Feedback</a></li> <!-- Link to feedback page -->
+			<li class="dropdown active">
+			<!-- Active shows which page the user is currently at -->
+				<button>My Journey <i class="fas fa-caret-down"></i></button> <!-- Button to show content -->
+				<div id="drop_content"> <!-- Div storing "My Journey" links to other pages -->
+					<ul> <!-- Unordered list to store linkss -->
+						<li class="active"><a href="lspj_past.html">My Past Experience <i class="fas fa-backward"></i></a></li> <!-- Links back -->
+						<!-- Active shows which page the user is currently at -->
+						<li><a href="lspj_current.html">What's Going on Now <i class="fas fa-clock"></i></a></li> <!-- Link to What's Going on Now -->
+						<li><a href="lspj_future.html">What the Future Holds <i class="fas fa-forward"></i></a></li> <!-- Link to What the Future Holds -->
+					</ul>
+				</div>
+			</li>
+			<li><a href="index.html">About Me</a></li> <!-- Links to About Me -->
+			<li id="nav_logo"><a href="index.html">Lucas' SP Journey</a></li> <!-- Links to About Me -->
+		</ul>
+	</nav>
+	<video autoplay muted loop id="background_video"> <!-- Div with background video -->
+		<source src="../videos/past_video.mp4" type="video/mp4">
+	</video>
+	<main class="content"> <!-- Div containing all content, excluding navbar and background -->
+		<div class="title_banner"> <!-- Div for showing the banner and title -->
+			<img class="title_img" src="../photos/UnderBG.png" alt="Title Image">
+			<h1>My Past Experience</h1>
+		</div>
+		<div class="column_66"> <!-- Div taking two thirds of the page -->
+			<h2>Where I studied</h2>
+			<p>I studied at St. Patrick's Secondary School from 2017 to 2020, taking double science (Chemistry and Physics) and Computing. St Patrick's School was an all-boys school, so the school had a strong sense of brotherhood. Even though the whole class may not have been very bonded, we all were willing to lend a hand to help each other out. In addition, the school was proficient in equipping us for our O'Levels while enabling us to enjoy our carefree Secondary School lives. Overall, the teachers were kind and efficient, and classes were a blast! Studying there was indeed a unique experience you will not find at other schools!</p>
+		</div>
+		<div class="column_33"> <!-- Div taking one third of the page -->
+			<figure>
+				<img src="../photos/st_patricks_school_polaroid.png" alt="Photo taken of St. Patrick's School">
+				<figcaption>Photo taken by Joel Teo <a href="https://www.instagram.com/joel.teoo/" target="_blank">@joel.teoo</a></figcaption> <!-- Citation -->
+			</figure>
+		</div>
+		<div class="column_33 center"> <!-- Div taking one third of the page -->
+		<!-- Additional class center given to change the colour of this segment -->
+			<img src="../photos/library_polaroid.png" alt="Photo of Media Resource Library Activities">
+		</div>
+		<div class="column_66 center"> <!-- Div taking two thirds of the page -->
+		<!-- Additional class center given to change the colour of this segment -->
+			<h2>My Commitments</h2>
+			<p>My school provided me with ample leadership opportunities, be it in class or through CCAs. As a result, I managed to use my array of skills to contribute to many of these projects.</p>
+			<ul> <!-- Unordered list -->
+				<li>Spearheaded class VIA project in 2018, "Heart for the Environment", aimed at promoting recycling throughout our school.</li>
+				<li>Led my class in another VIA project in 2019 centred around raising awareness about animal abuse in Singapore.</li>
+				<li>I was also given the President for the Media and Resource Library role, guiding my fellow peers and juniors in an assorted range of competitions in essay writing, videography, and photography.</li>
+				<li>Lastly, I aided in several school and class events as a video editor, editing videos for Teachers' Day and National Day. </li>
+			</ul>
+		</div>
+		<div class="column_66"> <!-- Div taking two thirds of the page -->
+			<h2>Coding Experiences</h2>
+			<p>Studying computing for O'Levels in Secondary School and having an incredibly supportive teacher had given me an abundance of experience in coding and computing. I took part in many competitions, workshops and completed many online courses in efforts to upskill myself.</p>
+			<ul> <!-- Unordered list -->
+				<li>I began coding from my computing lessons in Secondary 3, learning Python</li>
+				<li>Then, I took up several online courses to learn HTML, CSS and JS to make my portfolio website.</li>
+				<li>I also completed cybersecurity courses like the Singtel Cyber Xperience.</li>
+			</ul>
+		</div>
+		<div class="column_33"> <!-- Div taking one third of the page -->
+		<img src="../photos/roadmap.png" alt="Roadmap">
+		</div>
+		<footer> <!-- Footer -->
+			<ul id="footer_links"> <!-- Unordered list containing all footer links -->
+				<li><a href="https://www.instagram.com/lucas_quek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li> <!-- Links to instagram -->
+				<li><a href="mailto:lucas@erwindomain.com.com" target="_blank"><i class="far fa-envelope"></i> Email</a></li> <!-- Links to email -->
+				<li><a href="https://lucas-quek.com/" target="_blank"><i class="fas fa-portrait"></i> Portfolio</a></li> <!-- Links to portfolio website -->
+			</ul>
+			<a id="next_page" href="lspj_current.html">Travel to the Present</a> 
+			<!-- Link to next page (lspj_past.html) -->
+			<img class="footer_img" src="../photos/footer.png" alt="Footer Image">
+			<!-- Image of the footer -->
+		</footer>
+	</main>
+</body>
+</html>

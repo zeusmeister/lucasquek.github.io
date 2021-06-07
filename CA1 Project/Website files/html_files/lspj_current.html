@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+	
+	HTML Document
+	Lucas' SP Journey What's Going on Now Page
+
+	Filename: lspj_current.html
+
+	Description: HTML page talking about what Poly life is like.
+
+	Name: Lucas Quek Yufeng
+	Class: DISM/FT/1A/05
+	Student ID: p2104092
+
+	Disclaimer: Chrome has an issue with colspan in tables, as such, I resorted to using nested tables to achieve the same effect without being bounded by Chrome's limitations.
+
+	-->
+	<meta charset="utf-8">
+	<title>What's Going on Now</title>
+	<!-- Linking reset and style sheet -->
+	<link href="../css_files/lspj_reset.css" rel="stylesheet" type="text/css">
+	<link href="../css_files/lspj_styles.css" rel="stylesheet" type="text/css">
+	<!-- Imports font-awesome icons -->
+	<script src="https://kit.fontawesome.com/57d7486e4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav> <!-- Nav bar -->
+		<ul> <!-- Unorder list to store navbar elements -->
+			<li><a href="lspj_feedback.html">Feedback</a></li> <!-- Link to feedback page -->
+			<li class="dropdown active">
+			<!-- Active shows which page the user is currently at -->
+				<button>My Journey <i class="fas fa-caret-down"></i></button> <!-- Button to show content -->
+				<div id="drop_content"> <!-- Div storing "My Journey" links to other pages -->
+					<ul> <!-- Unordered list to store linkss -->
+						<li><a href="lspj_past.html">My Past Experience <i class="fas fa-backward"></i></a></li> <!-- Link to My Past Experience -->
+						<li class="active"><a href="lspj_current.html">What's Going on Now <i class="fas fa-clock"></i></a></li> <!-- Links back -->
+						<!-- Active shows which page the user is currently at -->
+						<li><a href="lspj_future.html">What the Future Holds <i class="fas fa-forward"></i></a></li> <!-- Link to What the Future Holds -->
+					</ul>
+				</div>
+			</li>
+			<li><a href="index.html">About Me</a></li> <!-- Links to About Me -->
+			<li id="nav_logo"><a href="index.html">Lucas' SP Journey</a></li> <!-- Links to About Me -->
+		</ul>
+	</nav>
+	<div class="background_img" id="sp_bg"> <!-- Div with background image -->
+	</div>
+	<figure class="floating_caption">
+		<figcaption>Photo from <a href="https://www.sp.edu.sg/" target="_blank">SP Website</a></figcaption> <!-- Citation -->
+	</figure>
+	<main class="content"> <!-- Div containing all content, excluding navbar and background -->
+		<div class="title_banner"> <!-- Div for showing the banner and title -->
+			<img class="title_img" src="../photos/UnderBG.png" alt="Title Image">
+			<h1>What's Going on Now</h1>
+		</div>
+		<div class="column_33"> <!-- Div taking one third of the page -->
+			<figure>	
+				<img src="../photos/classmate_polaroid.png" alt="Photo taken with Jedidiah">
+				<figcaption>Photo taken by Jedidiah <a href="https://www.instagram.com/jediyuhh/" target="_blank">@jediyuhh</a></figcaption> <!-- Citation -->
+			</figure>
+		</div>
+		<div class="column_66"> <!-- Div taking two thirds of the page -->
+			<h2>Starting Polytechnic</h2>
+			<p>I entered Singapore Polytechnic's Diploma in Infocomm and Security Management (DISM) course through the Early Admission Exercise (EAE), meeting many friendly and passionate people determined to do well. However, the overall experience of Poly is much different from Secondary School. The first being the schedule, as every day begins and ends at a different time. Therefore, an immense level of self-discipline is required to force myself to school, especially since I live one hour away from school. Another thing is the lesson notes; no longer do we use pen and paper; everything is now digital, in PowerPoint slides or word documents. Thus, making students much more susceptible to distractions and enabling notes to be taken down faster, such that lessons can go more quickly.</p>
+		</div>
+		<div class="column_66 center"> <!-- Div taking two thirds of the page -->
+		<!-- Additional class center given to change the colour of this segment -->
+			<h2>My CCAs</h2>
+			<p>Although I am interested in many different activities, I wanted to focus on video editing and helping the community. Hence I decided to join Singapore Poly's videography club and School of Computing Ambassadors (SOCA).</p>
+			<ul> <!-- Unordered list -->
+				<li>I chose the videography club to further developing my video editing abilities as my interest. Additionally, to learn camera tricks and the filming process on top of my current knowledge in post-production.</li>
+				<li>Meanwhile, I also joined SOCA to aid in future SOC events to enable fun and engaging events for my fellow SOC peers. Also, I wanted to meet new and exciting people who share similar pursuits.</li>
+			</ul>
+		</div>
+		<div class="column_33 center"> <!-- Div taking one third of the page -->
+		<!-- Additional class center given to change the colour of this segment -->
+			<img src="../photos/videography_polaroid.png" alt="Photo taken during Videography CCA">
+		</div>
+		<div class="column_100"> <!-- Div taking the full width of the page -->
+			<h2>Studies and Workload</h2>
+			<p>The teaching system in Poly is very different from Secondary School, as everything is more self-directed. Especially in regards to your learning schedule and the content learnt. A segment of Poly's grades comes from weekly quizzes that begin to overwhelm students when practically every module has a quiz. Thus, requiring a new sense of responsibility to be on top of all the happenings in your modules. Also, some subjects like Math, do not actually teach during lessons. Instead, the content from these lessons comes from weekly released videos that go through what is taught. As such, it is vital to remain consistent and on top of your schedule.</p>
+		</div>
+		<div class="column_100 full_width"> <!-- Div taking the full width of the page -->
+			<table id="outer_table"> <!-- Overall table -->
+				<tr>
+					<td> <!-- Table data of the outside table -->
+						<table> <!-- Inner table with all the timeslots -->
+							<tr>
+								<th class="day"></th>
+								<th>8:00 - 9:00</th>
+								<th>9:00 - 10:00</th>
+								<th>10:00 - 11:00</th>
+								<th>11:00 - 12:00</th>
+								<th>12:00 - 13:00</th>
+								<th>13:00 - 14:00</th>
+								<th>14:00 - 15:00</th>
+								<th>15:00 - 16:00</th>
+								<th>16:00 - 17:00</th>
+								<th>17:00 - 18:00</th>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Table data of the outside table -->
+						<table> <!-- Inner table with all modules on the day -->
+							<tr>
+								<td class="day">Monday</td>
+								<td class="period_2">ST2413<br>FOC<br>Tutorial<br>DISM/FT/1A<br>05<br>T2145<br>How Kiam Cheng<br>Sem1</td>
+								<td class="period_3">ST0502<br>FOP<br>Tutorial<br>DISM/FT/1A<br>05<br>T2035<br>Choo Chui Har<br>Sem1</td>
+								<td></td>
+								<td class="period_2">SP108B<br>ECG<br>Tutorial<br>DISM/FT/1A<br>05<br>T2144<br>Lee Kay Beng<br>Sem1</td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Table data of the outside table -->
+						<table> <!-- Inner table with all the modules on the day -->
+							<tr>
+								<td class="day">Tuesday</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="period_1_half">MS0105<br>MATH<br>Tutorial<br>DISM/FT/1A<br>05<br>T2156<br>Chua Cheng Siew<br>Sem1</td>
+								<td class="period_2_half">ST0501<br>FED<br>Tutorial<br>DISM/FT/1A<br>05<br>T2035<br>Janny Chan Wai Ching<br>Sem1</td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Table data of the outside table -->
+						<table> <!-- Inner table with all modules on the day -->
+							<tr>
+								<td class="day">Wednesday</td>
+								<td class="period_2">LC0855<br>CPR<br>Tutorial<br>DISM/FT/1A<br>05<br>T2144<br>Tham Foong Meng<br>Sem1</td>
+								<td class="period_2">ST2413<br>FOC<br>Practical<br>DISM/FT/1A<br>05<br>T2144<br>How Kiam Cheng<br>Sem1</td>
+								<td></td>
+								<td class="period_2">LC08560<br>CAT<br>Tutorial<br>DISM/FT/1A<br>05<br>T22511<br>Vimala Wilma Marie<br>Sem1</td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Table data of the outside table -->
+						<table> <!-- Inner table with all modules on the day -->
+							<tr>
+								<td class="day">Thursday</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Table data of the outside table -->
+						<table> <!-- Inner table with all modules on the day -->
+							<tr>
+								<td class="day">Friday</td>
+								<td></td>
+								<td></td>
+								<td class="period_3">ST0502<br>FOP<br>Practical<br>DISM/FT/1A<br>05<br>T2147<br>Choo Chui Har<br>Sem1</td>
+								<td></td>
+								<td class="period_2_half">ST0501<br>FED<br>Practical<br>DISM/FT/1A<br>05<br>T2142<br>Janny Chan Wai Ching<br>Sem1</td>
+								<td class="period_1_half">MS0105<br>MATH<br>Tutorial<br>DISM/FT/1A<br>05<br>T2142<br>Chua Cheng Siew<br>Sem1</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Table data of the outside table -->
+						<table> <!-- Inner table with all modules on the day -->
+							<tr>
+								<td class="day">Saturday</td>
+								<td></td>
+								<td>MS0105<br>MATH<br>Lecture<br>DISM/FT/1A<br>01-06<br>Asyn<br>Sem1</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="column_100">
+			<p>In addition, a large percentage of marks come from projects, whether it be group projects or individual projects (like this website!). These projects are impossible to complete in a short span of 1 to 2 days; thus, they require continuous effort to complete them within the deadline. Also, when it comes to group projects, it is critical to have good communication skills and to be proactive.  Having to work with multiple people may become troublesome as everyone has different schedules and habits. For example, some may sleep early, some late, some wake up early, and some wake up late. Finding a standard time on top of these life habits and within everybody's schedule has proven quite an issue for me. But it is essential to be open-minded and help out your group members because you are a part of the team in the end.</p>
+		</div>
+		<footer> <!-- Footer -->
+			<ul id="footer_links"> <!-- Unordered list containing all footer links -->
+				<li><a href="https://www.instagram.com/lucas_quek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li> <!-- Links to instagram -->
+				<li><a href="mailto:lucas@erwindomain.com.com" target="_blank"><i class="far fa-envelope"></i> Email</a></li> <!-- Links to email -->
+				<li><a href="https://lucas-quek.com/" target="_blank"><i class="fas fa-portrait"></i> Portfolio</a></li> <!-- Links to portfolio website -->
+			</ul>
+			<a id="next_page" href="lspj_future.html">Explore the Future!</a>
+			<!-- Link to next page (lspj_past.html) -->
+			<img class="footer_img" src="../photos/footer.png" alt="Footer Image">
+			<!-- Image of the footer -->
+		</footer>
+	</main>
+</body>
+</html>

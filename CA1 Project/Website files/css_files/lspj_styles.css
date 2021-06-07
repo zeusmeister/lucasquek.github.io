@@ -1,0 +1,581 @@
+@charset "utf-8";
+
+/* 
+
+	CSS Document 
+	Lucas' SP Journey Style Sheet
+   
+	Filename: lspj_styles.css
+
+	Description: Serves as the general styling page in all HTML documents for Lucas' SP Journey (LSPJ).
+
+	Name: Lucas Quek Yufeng
+	Class: DISM/FT/1A/05
+	Student ID: p2104092
+
+	DISCLAIMER: Validator claims that "text-underline-offset" and "text-decoration-thickness" does not exist and presents errors, but it is a valid CSS styling.
+
+	Also, em has been used instead of pixels along with vh and vw, such tha the content is
+	presentable on both 1366x768 or 1920x1080.
+
+*/
+
+/* Import font, KoHo, from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=KoHo&display=swap');
+
+* { 
+	font-family: 'KoHo', sans-serif; /* Sets KoHo font for all elements */
+}
+
+a, button {
+	text-decoration: underline solid transparent; 
+	/* Gives links a prexisting transparent underline so when hovered later, it gives a smooth underline effect  */
+	transition: 0.15s ease; /* Make link transitions take 0.15 seconds */
+}
+
+/* Make last page content at the top due to lack to background img or video */
+
+#lastpage {
+	top: 0;
+}
+
+/* Navigation Bar styling */
+
+nav ul {
+	width: 100%;
+ 	overflow: hidden;
+ 	background-color: #e61782;
+	border-bottom: 1px solid grey;
+}
+
+#nav_logo {
+	left: 0px;
+	position: absolute; /* Position absolute the logo, then float it to left of navbar */
+	float: left;
+}
+
+nav li {
+  	float: right; /* Float other list links to the right */
+}
+
+nav > ul > li > a, .dropdown button {
+	text-align: center; /* Centers text and applies padding and margin */
+	font-size: 3.81vh;
+	padding: 2.42vh 2.77vh;
+	margin: 1.38vh 5.20vh;
+}
+
+nav > ul > li > a{
+  	display: block; /* Applies block display, so that links remain vertically centered */
+}
+
+.dropdown button {
+	border-width: 0; /* Removes border, background color and makes text white */
+	background-color: transparent;
+	color: white;
+}
+
+#drop_content {
+	display: none; /* Hides the dropdown contents from My Journey */
+	position: absolute; /* Position absolute to position it underneath dropdown properly */
+	right: 19.58vh;
+	z-index: 2; /* z-index content as 2 to overlap background image or video */
+}
+
+#drop_content li {
+	font-size: 3.81vh;
+	padding: 1.9vh 11.7vh;
+	float: none; /* Removes float to properly align content in the center */
+	text-align: center;
+	border-top: 1px solid grey;
+}
+
+#nav_logo a {
+	text-decoration: none; /* Removes underline */
+}
+
+nav li a:hover {
+	/* Underlines link upon hover and changes colour to green when hovered */
+	text-decoration: underline;
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 1px;
+	color: #66cc33;
+}
+
+.dropdown:hover #drop_content {
+	display: block; /* Changes display from none to block to show drop down content in block*/
+	animation: fade_in 0.2s both;
+	/* Gives the links a fade in effect when the dropdown button is being hovered */
+}
+
+.dropdown:hover button {
+	text-decoration: underline; /* Underlines "My Journey" button and changes colour to green when hovered */
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 1px;
+	color: #66cc33;
+}
+
+#nav_logo a:hover {
+	text-decoration: none; /* Ensures logo is not underlined and changes its colour to grey when hovered */
+	color: #c1c1c1;
+}
+
+.active > a {
+	text-decoration: underline; /* Underline and change colour of links when active to light green */
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 1px;
+	color: #A9E32D;
+}
+
+.active > button {
+	text-decoration: underline; /* Underline and change colour of button "My Journey" when active to light green */
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 1px;
+	color: #A9E32D;
+}
+
+.active a:hover { 
+	color: #66cc33; /* Changes colour of active link to green when hovered */
+}
+
+/* Header image styling */
+
+.background_img { /* Serves as the div for the background img */
+	position: absolute; /* Makes the position absolute */
+	z-index: -1; /* Then z-index to -1 so that it lies beneath the navbar and the content */
+	top: 0vh;
+	left: 0;
+	width: 100%; /* Makes div take up 100% of the page width */
+	height: 100vh; /* Makes the div height be 100 of the viewable height of the website */
+	background-size: cover; /* Fits the background image to the div size */
+	background-position: center; /* Centers the background image */
+}
+
+#about_me_bg { /* Changes background image of the background_img div */
+	background-image: url("../photos/background.jpg"); 
+}
+
+#sp_bg { /* Changes background image of the background_img div */
+	background-image: url("../photos/background_sp.jpg");
+}
+
+#future_bg { /* Changes background image of the background_img div */
+	background-image: url("../photos/background_cybersecurity.jpg");
+}
+
+#background_video {
+	position: absolute; /* Makes the position absolute */
+	z-index: -1; /* Then z-index to -1 so that it lies beneath the navbar and the content */
+	width: 100%; /* Makes div take up 100% of the page width */
+	top: 0;
+	left:  0;
+}
+
+.title_banner {
+	grid-column: 1/4; /* Makes the title_banner div take up columns 1 to 3 */
+}
+.title_img {
+	width: 100%; /* Makes image take up 100% of the div size */
+	height: auto;
+}
+
+.background_img section {
+	position: absolute; /* Makes overlapping info abolutely positioned */
+	top: 40%; /* Positions the section appropriately */
+  	left: 10%;
+	text-align: left; 
+	padding: 3.33em 0.83em;
+	background-color: white; /* Changes background colour to white, text to black */
+	color: black;
+	border: 3px solid #e61782; /* Gives a 3px border with the same colour as navbar */
+	border-radius: 100%; /* Makes the section a circle */
+	animation: fade_in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.25s both; 
+	/* Fades the section in with a 0.25s delay */
+}
+
+.background_img section h1 {
+	font-size: 1em;
+}
+
+.background_img section ul {
+	font-size: 0.6em;
+	display: table; /* Centers list elements by giving equal left and right margins */
+	margin: 0 auto;
+}
+
+.title_banner h1 {
+	position: absolute; /* Absolute positioning on h1 header */
+  	top: 0.83em; 
+  	left: 50%;
+  	transform: translate(-50%, 0); /* Moves the h1 50% of itself to the left, centering it */
+	color: white;
+	font-size: 2.5em
+}
+
+/* Layout styling  */
+
+.content { /* Div that comprises of all content, excludes background img and navbar */
+	position: absolute;  /* Abosolute position so that top: 100vh in line 210 works */
+	z-index: 1; /* z-index makes content lie above the background image but below navbar */
+	display: grid; /* Makes the content a grid display */
+	grid-template-columns: 33.4% 33.3% 33.3%; /* Divides the content into thirds */
+	background-color: #ffd4e9;
+}
+
+.content:not(#last_page) {
+	top: 100vh; /* Makes content appear 100vh from the top, so it appears past the background image */
+}
+
+.content div:not(.title_banner) img { /* Targets all divs in content except the banner */
+	width: 100%;
+	height: auto;
+}
+
+.column_33, .column_66 { /* Styles column_66 and column_33 */
+	text-align: center;
+	min-height: 8.33em;
+	padding: 3.33em 0.83em;
+}
+
+figure figcaption { /* Styles figcaption */
+	font-size: 0.5em; 
+	margin: 0.41em 0 0;
+}
+
+figure figcaption a { /* Styles the links in figcaption when giving credit for images */
+	color: steelblue;
+}
+
+figure figcaption a:hover { /* Underlines links in figcaption when hovered */
+	text-decoration: underline;
+}
+
+.content p { /* Styles paragraphs of content */
+	text-align: justify;
+	line-height: 1.45em;
+	padding: 0.83em 1.66em;
+}
+
+.content p a {
+	color: steelblue;
+	font-size: 1em;
+}
+
+.content p a:hover {
+	text-decoration: underline;
+}
+
+.content ul:not(#footer_links) { /* Styles unordered list except the list in footer for links */
+	text-align: justify;
+	line-height: 1.25em;
+	padding: 0 2.91em;
+}
+
+.content li {
+	font-size: 0.79em;
+	padding: 0.21em 0;
+}
+
+.column_33 {
+	display: flex; /* Makes it so that image can be vertically aligned */
+	align-items: center;
+	grid-column-end: span 1; /* Makes column_33 take one column which is one third of width */
+}
+
+.column_66 {
+  	grid-column-end: span 2; /* Makes column_66 take two columns which is two thirds of width */
+}
+
+.column_100 {
+	grid-column-end: span 3; /* Makes column_100 take all columns which is 100% of the width */
+	margin: 0 5.20em;
+	padding: 1.66em 0.41em;
+	text-align: center;
+}
+
+.full_width {
+	margin: 0; /* Removes margin and padding for full width column_100 */
+	padding: 0;
+	text-align: center;
+}
+
+#video_figure {
+	grid-column-end: span 3; /* Makes the figure containing the video take up all 3 columns */
+	text-align: center;
+}
+
+#video_figure video{
+	display: block; /* Display block so that margin-left and margin-right is equal */
+	width: 60%;
+	margin: 0 auto;
+	border: 2px solid black;
+}
+
+.center {
+	background-color: #fbdfed; /* Makes the center div in content appear as a lighter pink */
+}
+
+.floating_caption {
+	position: absolute; /* Absolute Position on figure */
+	top: 95%; /* Positions the caption appropriately */
+	right: 2%;
+	background-color: rgba(255, 255, 255, 0.8); /* Background colour white with 0.8 opacity */
+}
+
+.floating_caption figcaption {
+	margin: 0; /* Removes uneccesary margins */
+}
+
+/* Feedback Form  */
+
+form {
+	background-color: white;
+	grid-column: 1/4; /* Makes form take up all 3 columns */
+	margin: 0 auto; /* Equally aligns left and right of the form */
+	width: 70%; /* Makes form take up 70% of page */
+	border: 1px solid black;
+}
+
+form h1 { /* Form header styling */
+	width: 90%;
+	margin: 2.5%;
+	font-size:1.5em;
+}
+
+form section {
+	display: grid; /* Makes display grid */
+	grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%; /* Divides width into 1/10 */
+	border: 1px solid black;
+	width: 90%;
+	margin: 2.5% 5%;
+}
+
+label { /* Label styling */
+	font-size: 0.66em;
+}
+
+input, textarea { /* Removes extra padding from input and textarea */
+	padding: 0;
+}
+
+.form_requirement, .form_optional {
+	border-bottom: 1px solid black; /* Makes form questions have a separator from the options */
+}
+
+.form_requirement, .form_optional, .slider_box, [type="text"], [type="number"], [type="email"] {
+	grid-column-end: span 10; /* Makes elements take up 10 columns */
+	font-size: 0.75em;
+}
+
+.slider { /* Slider styling */
+	margin: 0.83em 5% 0;
+	width: 90%;
+}
+
+.radio_option { /* Radio option styling */
+	text-align: center;
+	font-size: 0.66em;
+}
+
+form section input { /* Form input styling */
+	width: 100%;
+	margin: auto;
+}
+
+[type="text"],[type="number"],[type="email"] {
+	border: 0;
+	min-height: 1.45em;
+}
+
+[type="file"] {
+	font-size: 0.66em;
+}
+
+.form_align_left label:not(.form_requirement):not(.form_optional) {
+	grid-column-end: span 9; /* Makes radio and checkbox options take up 9 columns */
+	text-align: left;
+}
+
+form section div {
+	grid-column-end: span 10; /* Makes textarea take up all 10 columns */
+}
+
+form textarea { /* Textarea styling */
+	width: 100%;
+	height: 100%;
+	resize: none;
+	border: none;
+}
+
+textarea:focus { /* Removes outline for textarea */
+	outline-width: 0;
+}
+
+.form_subtext { /* Text underneath sliders styling */
+	text-align: center;
+	font-size: 0.5em;
+}
+
+.last {
+	grid-column-start: 10; /* Makes right subtext lie in the last column */
+}
+
+.form_requirement:after { 
+	content: " *"; /* Places * after question for required fields */
+	color: red; /* Makes * red colour */
+}
+
+#submit_and_reset {
+	display: grid; /* Makes bottom grid display */
+	grid-template-columns: 25% 25% 25% 25%; /* Divides the bottom into quaters */
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1.66em 0;
+}
+
+form div [type="submit"] {
+	grid-column: 1/4; /* Makes submit take up the first 3 columns */
+	border-radius: 14px; /* Curves border edges */
+	height: 5em;
+}
+
+[type="reset"] {
+	font-size: 1em;
+	width: 1.5em; /* Specifies width an height of reset button */
+	height: 1.5em;
+	margin: auto 1.5em; /* Provides side margins and automatic equal margin for top and bottom */
+	border: none; /* Removes border from reset button */
+	background-color: white; /* Sets background as white to match form */
+}
+
+[type="reset"]:active {
+	border: 1px dotted grey; /* Gives 1px grey dotted border when clicked */
+	border-radius: 100%; /* Makes it a circle */
+	background-color: grey; /* Changes background colour to grey */
+}
+
+/* Web Table styling */
+
+#outer_table { /* Outer table styling */
+    width: 90%; /* Makes table take 90% of the page with 5% margins on both sides */
+    margin: 0 5%;
+    border-collapse: collapse; /* Combines the borders */
+}
+
+#outer_table > tbody > tr > td {
+	border: 0; /* Removes border and padding from the table data of the outer table */
+	padding: 0;
+}
+
+table:not(#outer_table) {
+	border-collapse: collapse; /* Combines the borders of the inner tables */
+	width: 100%; /* Makes inner tables take up 100% of the outer table's width */
+}
+
+th, td {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.65em;
+    border: 1px solid grey;
+	background-color: white;
+}
+
+.day {
+    min-width: 8%; /* Table data under the first column take up 8% of the inner table width */
+}
+
+td, th {
+    width: 9.2%; /* Table data and headers to take up the remaining 92% divided into 10 */
+    padding: 0.4em 0;
+    text-align: center;
+}
+
+.period_1_half {
+    width: 13.8%; /* Gives 1.5hr long periods 1.5 times the normal width (9.2% * 1.5 = 13.8%) */
+}
+
+.period_2 {
+    width: 18.4%; /* Gives 2hr long periods 2 times the normal width (9.2% * 2 = 18.4%) */
+}
+
+.period_2_half {
+    width: 23%; /* Gives 2.5hr long periods 2.5 times the normal width (9.2% * 2.5 = 23%) */
+}
+
+.period_3 {
+    width: 27.6% /* Gives 3hr long periods 3 times the normal width (9.2% * 3 = 27.6%) */
+}
+
+td:hover, th:hover { 
+    background-color: #c1c1c1; /* Changes colour of table data or header upon hover */
+}
+
+/* Footer styling  */
+
+footer { 
+	width: 100%; /* Makes footer take up 100% of width */
+	grid-column-end: span 3; /* Takes up all 3 columns */
+	text-align: center; 
+}
+
+.footer_img {
+	bottom: 0; /* Makes footer image bottom of the page */
+	width: 100%;
+	align-items: flex-end; /* Fixes issue of footer image having blank space underneath */
+    display: flex;
+}
+
+#footer_links { /* Styles footer links */
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 0.83em;
+}
+
+#footer_links li { /* Makes footer links inline */
+	display: inline;
+	margin: 0 8%;
+}
+
+#footer_links li a { 
+	padding: 0.41em;
+}
+
+footer #next_page { /* Styles next page button on footer */
+	position: absolute; /* Abosolute position of the button */
+	left: 50%;
+	transform: translate(-45%, 0); /* Moves the button 45% of it's width to the left */
+	bottom: 11vw; /* Positions the button based on the viewheight */
+	padding: 1.04em 2.5em;
+	border: 1px solid black; /* Border styling */
+	border-radius: 15px; /* Curves border corners */
+	align-items: center;
+	background-color: white;
+	color: black;
+} 
+
+footer a:hover, #next_page:hover {
+	text-decoration: underline; /* Makes all links in the footer underline upon hover */
+	color: #66cc33; /* Makes all links in footer become green upon hover*/
+	text-decoration-thickness: 1.5px;
+	text-underline-offset: 1px;
+}
+
+#next_page:hover {
+	background-color: floralwhite; 
+	/* Makes the background color of the next page button whitish yellow */
+}
+
+/* Animations */
+
+@keyframes fade_in {
+  0% { /* Start of the animation */
+            filter: blur(12px); /* Blurs the subject at the start and giving 0 opacity */
+    opacity: 0;
+  }
+  100% { /* End of the animation */
+            filter: blur(0px); /* Removes the blur on the subject and giving it a full opacity */
+    opacity: 1;
+  }
+}

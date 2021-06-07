@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+	
+	HTML Document
+	Lucas' SP Journey About Me Page
+
+	Filename: index.html
+
+	Description: HTML page introducing me, showcasing my personality, hobbies and interests.
+
+	Name: Lucas Quek Yufeng
+	Class: DISM/FT/1A/05
+	Student ID: p2104092
+
+	-->
+	<meta charset="utf-8">
+	<title>About Me</title>
+	<!-- Linking reset and style sheet -->
+	<link href="../css_files/lspj_reset.css" rel="stylesheet" type="text/css">
+	<link href="../css_files/lspj_styles.css" rel="stylesheet" type="text/css">
+	<!-- Imports font-awesome icons -->
+	<script src="https://kit.fontawesome.com/57d7486e4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav> <!-- Nav bar -->
+		<ul> <!-- Unorder list to store navbar elements -->
+			<li><a href="lspj_feedback.html">Feedback</a></li> <!-- Link to feedback page -->
+			<li class="dropdown">
+				<button>My Journey <i class="fas fa-caret-down"></i></button> <!-- Button to show content -->
+				<div id="drop_content"> <!-- Div storing "My Journey" links to other pages -->
+					<ul> <!-- Unordered list to store linkss -->
+						<li><a href="lspj_past.html">My Past Experience <i class="fas fa-backward"></i></a></li> <!-- Link to My Past Experience -->
+						<li><a href="lspj_current.html">What's Going on Now <i class="fas fa-clock"></i></a></li> <!-- Link to What's Going on Now -->
+						<li><a href="lspj_future.html">What the Future Holds <i class="fas fa-forward"></i></a></li> <!-- Link to What the Future Holds -->
+					</ul>
+				</div>
+			</li>
+			<li class="active"><a href="index.html">About Me</a></li> <!-- Links back -->
+			<!-- Active shows which page the user is currently at -->
+			<li id="nav_logo"><a href="index.html">Lucas' SP Journey</a></li> <!-- Links to About Me -->
+		</ul>
+	</nav>
+	<div class="background_img" id="about_me_bg"> <!-- Div with background image -->
+		<section> <!-- Section information overlay -->
+			<h3>Welcome to my website</h3> 
+			<ul> <!-- Overview of the different pages on the website -->
+				<li>About Me</li>
+				<li>My Past Experience</li>
+				<li>What's Going on Now</li>
+				<li>What the Future Holds</li>
+				<li>Feedback</li>
+			</ul>
+		</section>
+	</div>
+	<main class="content"> <!-- Div containing all content, excluding navbar and background -->
+		<div class="title_banner"> <!-- Div for showing the banner and title -->
+			<img class="title_img" src="../photos/UnderBG.png" alt="Title Image">
+			<h1>About Me</h1>
+		</div>
+		<div class="column_33"> <!-- Div taking one third of the page -->
+			<figure>
+				<img src="../photos/about_me_polaroid.png" alt="Photo of discussion">
+				<figcaption>Photo taken by Kara Huang <a href="https://www.instagram.com/kaoarara/" target="_blank">@kaoarara</a></figcaption> <!-- Citation -->
+			</figure>
+		</div>
+		<div class="column_66"> <!-- Div taking two thirds of the page -->
+			<h2>Who am I</h2>
+			<p>Hiya! I’m Lucas! A Year 1 student in Singapore Poly, pursuing a Diploma in Infocomm Security Management (DISM). I graduated from St. Patrick’s School and applied for the course through the Early Admission Exercise (EAE) in Secondary 4.</p>
+			<p>I enjoy exploring many aspects of technology, both in software and hardware. With coding being so individualised, it allows me to explore many ways to solving a single problem. I hope to learn more about technology in my 3 years at Singapore Poly to be proficient enough to excel in my education and career in the future. Besides that, if I’m not busy with work, you’ll usually find me playing video games or watching a show. You can read more about my hobbies <a href="#hobbies">below!</a></p>
+		</div>
+		<div class="column_66 center"> <!-- Div taking two thirds of the page -->
+		<!-- Additional class center given to change the colour of this segment -->
+			<h2>Personality</h2>
+			<p>I am an INTJ from the Myers Briggs Type Indicator (MBTI) test! I prefer to recharge in quieter environments and analytically observe a situation before making a sound judgment. I also favour looking at the practicality of an idea instead of the potential it presents, making sure a project is worth investing time in. Always ensuring that my time is well-spent as it is the thing I treasure the most.</p>
+			<figure>
+				<figcaption><a href="https://www.16personalities.com/" target="_blank">MBTI 16 Personalities test</a></figcaption> <!-- Citation -->
+			</figure>
+		</div>
+		<div class="column_33 center"> <!-- Div taking one third of the page -->
+		<!-- Additional class center given to change the colour of this segment -->
+			<figure>
+				<img src="../photos/personality_polaroid.png" alt="Personality type photo">
+				<figcaption>Photo by <a href="https://www.pinterest.com/pin/687010118152643144/" target="_blank">Francisca Armas</a></figcaption>
+				<!-- Citation -->
+			</figure>
+		</div>
+		<div class="column_100" id="hobbies"> <!-- Div taking the full width of the page -->
+			<h2>Interests & Hobbies</h2>
+			<p>I love gaming, playing sports, video editing and spending time with my friends. So I created a video to showcase all the hobbies and interests I have.</p>
+		</div>
+		<figure id="video_figure"> 
+			<video controls muted loop> 
+				<source src="../videos/hobbies_video.mp4" type="video/mp4">
+			</video>
+			<figcaption>Volleyball session from Ryan Woon <a href="https://www.instagram.com/flfkkwskwk/">@flfkkwskwk</a>
+			<br>Cycling photo from Hui Kiat <a href="https://www.instagram.com/hweekii/">@hweekii</a>
+			<br>Group photo from Ainsley Cabading <a href="https://www.instagram.com/aenslei/">@aenslei</a>
+			</figcaption> <!-- Citations -->
+		</figure>
+		<div class="column_33"> <!-- Div taking one third of the page -->
+			<img src="../photos/pool_polaroid.png" alt="Pool Photo">
+		</div>
+		<div class="column_66"> <!-- Div taking two thirds of the page -->
+			<p>Here is a short summary of the many hobbies and interests I enjoy!</p>
+			<ul> <!-- Unordered list -->
+				<li>I've played video games since I started Primary School, mainly playing First Person Shooter (FPS) games like Counter-Strike Global Offensive. I even played competitively in 2018 for the Testament Cup.</li>
+				<li>I enjoy all kinds of team sports, like volleyball and football. But I like volleyball the most, having met many great people who share the same love for the sport.</li>
+				<li>I also love cycling; having begun cycling in 2013, I cycled at East Coast Park at least once a week.</li>
+				<li>Lastly, I enjoy video editing. Using software like Sony Vegas, then After Effects, I edit videos mainly targeted toward games I play and the shows I watch.</li>
+			</ul>
+		</div>
+		<footer> <!-- Footer -->
+			<ul id="footer_links"> <!-- Unordered list containing all footer links -->
+				<li><a href="https://www.instagram.com/lucas_quek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li> <!-- Links to instagram -->
+				<li><a href="mailto:lucas@erwindomain.com.com" target="_blank"><i class="far fa-envelope"></i> Email</a></li> <!-- Links to email -->
+				<li><a href="https://lucas-quek.com/" target="_blank"><i class="fas fa-portrait"></i> Portfolio</a></li> <!-- Links to portfolio website -->
+			</ul>
+			<a id="next_page" href="lspj_past.html">Begin My Journey!</a>
+			<!-- Link to next page (lspj_past.html) -->
+			<img class="footer_img" src="../photos/footer.png" alt="Footer Image"> 
+			<!-- Image of the footer -->
+		</footer>
+	</main>
+</body>
+</html>

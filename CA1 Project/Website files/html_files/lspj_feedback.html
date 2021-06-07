@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!--
+	
+	HTML Document
+	Lucas' SP Journey Feedback Page
+
+	Filename: lspj_feedback.html
+
+	Description: HTML page with a feedback form, to get input from viewers.
+
+	Name: Lucas Quek Yufeng
+	Class: DISM/FT/1A/05
+	Student ID: p2104092
+
+	Disclaimer: Validator suggests to add a h2-h6 element as a heading for each section, but each section uses a label for a question, hence h2-h6 is not necessary.
+
+	-->
+	<meta charset="utf-8">
+	<title>Feedback</title>
+	<!-- Linking reset and style sheet -->
+	<link href="../css_files/lspj_reset.css" rel="stylesheet" type="text/css">
+	<link href="../css_files/lspj_styles.css" rel="stylesheet" type="text/css">
+	<!-- Imports font-awesome icons -->
+	<script src="https://kit.fontawesome.com/57d7486e4d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav> <!-- Nav bar -->
+		<ul> <!-- Unorder list to store navbar elements -->
+			<li class="active"><a href="lspj_feedback.html">Feedback</a></li> <!-- Links back -->
+			<!-- Active shows which page the user is currently at -->
+			<li class="dropdown">
+				<button>My Journey <i class="fas fa-caret-down"></i></button> <!-- Button to show content -->
+				<div id="drop_content"> <!-- Div storing "My Journey" links to other pages -->
+					<ul> <!-- Unordered list to store linkss -->
+						<li><a href="lspj_past.html">My Past Experience <i class="fas fa-backward"></i></a></li> <!-- Link to My Past Experience -->
+						<li><a href="lspj_current.html">What's Going on Now <i class="fas fa-clock"></i></a></li> <!-- Link to What's Going on Now -->
+						<li><a href="lspj_future.html">What the Future Holds <i class="fas fa-forward"></i></a></li> <!-- Link to What the Future Holds -->
+					</ul>
+				</div>
+			</li>
+			<li><a href="index.html">About Me</a></li> <!-- Links to About Me -->
+			<li id="nav_logo"><a href="index.html">Lucas' SP Journey</a></li> <!-- Links to About Me -->
+		</ul>
+	</nav>
+	<main class="content" id="last_page"> <!-- Div containing all content, excluding navbar and background -->
+		<div class="title_banner"> <!-- Div for showing the banner and title -->
+			<img class="title_img" src="../photos/UnderBG.png" alt="Title Image">
+			<h1>Feedback</h1>
+		</div>
+		<div class="column_100"> <!-- Div taking the full width of the page -->
+			<p>Hey, you made it to the last page! Thank you so much for reading through my whole website; it would mean so much to me if you could complete the feedback form underneath. Doing so will allow me to understand what I could improve on from my website, and my future attempts would be much more refined.</p>
+		</div>
+		<form>
+			<h1>Website Feedback Form</h1>
+			<section>
+				<label class="form_requirement">EMAIL</label>
+				<input type="email" placeholder="Email Address">
+			</section>
+			<section>
+				<label class="form_requirement">NAME</label>
+				<input type="text" placeholder="Full Name">
+			</section>
+			<section>
+				<label class="form_requirement">AGE</label>
+				<input type="number" min="1" max="100" placeholder="Age">
+			</section>
+			<section>
+				<label class="form_requirement">How helpful was the information presented on my website?</label>
+				<div class="slider_box">
+					<input type="range" min="1" max="10" value="1" class="slider">
+				</div>
+				<label class="radio_option">1</label>
+				<label class="radio_option">2</label>
+				<label class="radio_option">3</label>
+				<label class="radio_option">4</label>
+				<label class="radio_option">5</label>
+				<label class="radio_option">6</label>
+				<label class="radio_option">7</label>
+				<label class="radio_option">8</label>
+				<label class="radio_option">9</label>
+				<label class="radio_option">10</label>
+				<label class="form_subtext">Not helpful</label>
+				<label class="form_subtext last">Very helpful</label>
+			</section>
+			<section>
+				<label class="form_requirement">How aesthetically pleasing was my website?</label>
+				<div class="slider_box">
+					<input type="range" min="1" max="10" value="1" class="slider">
+				</div>
+				<label class="radio_option">1</label>
+				<label class="radio_option">2</label>
+				<label class="radio_option">3</label>
+				<label class="radio_option">4</label>
+				<label class="radio_option">5</label>
+				<label class="radio_option">6</label>
+				<label class="radio_option">7</label>
+				<label class="radio_option">8</label>
+				<label class="radio_option">9</label>
+				<label class="radio_option">10</label>
+				<label class="form_subtext">Ugly!</label>
+				<label class="form_subtext last">Gorgeous!</label>
+			</section>
+			<section class="form_align_left">
+				<label class="form_requirement">Were the segments of my website structured well?</label>
+				<input id="yes_segments" name="segments" type="radio" value="yes"><label for="yes_segments">Yes</label>
+				<input id="no_segments" name="segments" type="radio" value="no"><label for="no_segments">No</label>
+			</section>
+			<section class="form_align_left">
+				<label class="form_requirement">Where did you hear about this website?</label>
+				<input type="checkbox"><label>Word of mouth</label>
+				<input type="checkbox"><label>Social Media</label>
+				<input type="checkbox"><label>Direct Link</label>
+				<input type="checkbox"><label>Others</label>
+			</section>
+			<section>
+				<label class="form_optional">What improvements could I make to my website?</label>
+				<div class="form_full_width">
+					<textarea name="w3review" rows="5" cols="50"></textarea>
+				</div>
+			</section>
+			<section>
+				<label class="form_optional">Image Upload</label>
+				<div class="form_full_width">
+					<input type="file">
+				</div>
+			</section>
+			<div id="submit_and_reset">
+				<input type="submit">
+				<button type="reset" value="reset"><i class="fas fa-redo"></i></button>
+			</div>
+		</form>
+		<footer> <!-- Footer -->
+			<ul id="footer_links"> <!-- Unordered list containing all footer links -->
+				<li><a href="https://www.instagram.com/lucas_quek/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li> <!-- Links to instagram -->
+				<li><a href="mailto:lucas@erwindomain.com.com" target="_blank"><i class="far fa-envelope"></i> Email</a></li> <!-- Links to email -->
+				<li><a href="https://lucas-quek.com/" target="_blank"><i class="fas fa-portrait"></i> Portfolio</a></li> <!-- Links to portfolio website -->
+			</ul>
+			<a id="next_page" href="index.html">Return to Home</a>
+			<!-- Link to next page (lspj_past.html) -->
+			<img class="footer_img" src="../photos/footer.png" alt="Footer Image">
+			<!-- Image of the footer -->
+		</footer>
+	</main>
+</body>
+</html>
